@@ -1,0 +1,13 @@
+{%extends "base_generic.html" %}
+
+{%block content%}
+    {# <div class="col-sm-8"> #}
+        <h1>Title: {{blogs.title}}</h1>
+        <p><strong>Author:</strong> <a href="">{{ blogs.author }}</a></p> <!-- author detail link not yet defined -->
+      <p><strong>Content:</strong> {{ blogs.content }}</p>
+      <p><strong>Date:</strong> {{ blogs.post_date }}</p>
+      <p><strong>Language:</strong> {{ blogs.language }}</p>
+      <p><strong>Theme:</strong> {% for theme in book.theme %} {{ theme }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+  {# </div> #}
+{%endblock%}
+

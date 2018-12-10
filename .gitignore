@@ -1,0 +1,10 @@
+env
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+*.DS_Store
+*.pyc
+__pycache__
+*.swp
+local_settings.py
